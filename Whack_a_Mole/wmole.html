@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Whack-A-Mole</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="wmole.css">
+    </head>
+<body>
+
+        <!-------------- titile Bar------------------ -->
+       <div class="title">
+           <h1>WHACK A MOLE : <span>Try to click as many moles in set duration.</span></h1>
+           <!-- <h1>Try to click as many moles in set duration.</h1> -->
+       </div>
+       <!-- <hr> -->
+       <!------------------ Display Score and Time and buttons--------- -->
+      <div class="score_time_button">
+        <div class="button">
+            <button type="button" id="start" onclick="player1()">Start</button>
+            <button type="button" id="stop" onclick="">Stop</button>
+        </div>
+         <div class="score_time">
+           <h2>Score:  </h2><h2 id="score"> 0 </h2>
+           <h2>Time: </h2> <h2 id="time"> 60 </h2>
+          </div>
+      </div>
+       <!-- <hr> -->
+
+       <!-----------------Display buttons----------------- -->
+       <!-- <div class="button">
+       <button id="start">Start</button>
+       <button id="stop">Stop</button>
+       </div> -->   
+       <hr>
+
+       <!-- ---------grid with mole----------- -->
+       <div class="grid">
+           <div class="circle" id="1"></div>
+           <div class="circle" id="2"></div>
+           <div class="circle mole" id="3"></div>
+           <div class="circle" id="4"></div>
+           <div class="circle" id="5"></div>
+           <div class="circle" id="6"></div>
+           <div class="circle" id="7"></div>
+           <div class="circle" id="8"></div>
+           <div class="circle" id="9"></div>
+       </div>
+        
+        <script src="wmole.jss" async defer></script>
+    </body>
+</html>
