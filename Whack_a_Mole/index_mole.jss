@@ -19,7 +19,7 @@ let result= 0
 // declaring hit position
 let hitPosition
 
-let gameTimer = 5
+let gameTimer = 30
 // Declaring current Time as 30
 let currentTime = gameTimer
 
