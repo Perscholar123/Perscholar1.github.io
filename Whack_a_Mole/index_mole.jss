@@ -150,23 +150,10 @@ const startGame = play.addEventListener("click", ()=>{
          const stopGame = stop.addEventListener("click", ()=>{
            alert("Please continue our game")
             })
-            // return name;
+           
   
 
 
-        //    let player1
-        //    let player2
-        //    console.log(playRes1)
-        //    console.log(playRes2)
-        //    let playCompare=[player1,player2] 
-        //         playCompare.forEach(startGame => {
-        //         console.log("loop")
-        //         console.log(Math.max(playRes1, playRes2))
-        //     // let maxScore = Math.max(playRes1, playRes2)
-        //     // console.log(maxScore)
-        //     // alert(`${maxScore} is the winner!!`)
-        //     })
-          
  
 
 
@@ -174,68 +161,3 @@ const startGame = play.addEventListener("click", ()=>{
 
 
 
-
-
-//   function player()=>(new playGame(name,result){
-//    playerName = this.name 
-//     playerResult= this.result
-//  }
-// player()
-//  console.log(playGame)
-
-
-// let player1 // let player2 // let playCompare=[player1,player2]
-// playCompare.forEach(startGame => {
-    // console.log("loop")
-    // console.log(Math.max(player1,player2))
-// let maxScore = Math.max(player1,player2)
-// console.log(maxScore)
-// alert(`${maxScore} is the winner!!`)
-// })
- //    if(p1.textContent > p2.textContent)
- //    {
- //     alert(`Player1 won the game!!! `)
- //  }
- //  else if(p2.textContent > p1.textContent){
- //        alert(`Player2 won the game!!! `)
- //   }
- //  else{
- //    alert(`Both the players have equal scores!!!`)
- //  }
-
-    
-// playCompare.forEach(playCompare, startGame => {
-//     console.log("loop")
-//     let name = prompt('Hello, Player enter your name: ')
-
-// })
-  //  compare the results of player
-            // let maxScore = Math.max(player1,player2)
-            // alert(`${maxScore} is the winner!!`) 
-// calling function for 2 players and display max score
-// const player1 = startGame
-// console.log(player1)
-// const player2 = startGame
-// console.log(player2)
-
-// let maxScore = Math.max(player1,player2)
-// console.log(maxScore)
-// alert(`${maxScore} is the winner!!`)
-
-
-//     if(p1.textContent > p2.textContent)
-//     {
-//      alert(`Player1 won the game!!! `)
-//   }
-//   else if(p2.textContent > p1.textContent){
-//         alert(`Player2 won the game!!! `)
-//    }
-//   else{
-//     alert(`Both the players have equal scores!!!`)
-//   }
-
-// console.log(Math.max(player1,player2))
-// let maxScore = playCompare[Math.max(Number(player1),Number(player2))]
-// console.log(playCompare[Math.max(Number(player1),Number(player2))])
-// alert(`${maxScore} is the winner!!`)
- 
