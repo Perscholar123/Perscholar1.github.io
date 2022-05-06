@@ -19,7 +19,7 @@ let result= 0
 // declaring hit position
 let hitPosition
 
-let gameTimer = 10
+let gameTimer = 5
 // Declaring current Time as 30
 let currentTime = gameTimer
 
@@ -65,7 +65,7 @@ const startGame = play.addEventListener("click", ()=>{
                  circle.addEventListener('mousedown', ()=>{
                      if (circle.id == hitPosition){
                           result++       
-                         console.log(result)
+                        //  console.log(result)
                          // replaces the  current value in the element
                       score.textContent= result
                         //   res=Number(score.textContent)
@@ -85,9 +85,9 @@ const startGame = play.addEventListener("click", ()=>{
      // to calculate the counter and stop timer from moving further from the set-interval is over
       function countDown(){
                  /*reduce the counter */ /*replace the current value of timer */
-                 timeLeft.textContent = currentTime--
+                 timeLeft.textContent = --currentTime
                 // --currentTime
-                 console.log(currentTime)      
+                //  console.log(currentTime)      
             if(currentTime <= 0) {  
                 clearInterval(countDownTimerId)
                 clearInterval(timerId)
@@ -98,28 +98,50 @@ const startGame = play.addEventListener("click", ()=>{
                     // console.log("hi im player1")
                     p1.textContent=result
                     playRes1= Number(p1.textContent)
-                    score.textContent = playRes1
                     alert(`GAME OVER! ${name} YOUR FINAL SCORE IS: ${playRes1}`)
-                    console.log(Number(p1.textContent))
+
+                    // console.log(Number(p1.textContent))
                     p1.classList.remove('currentPlayer')
                     p2.classList.add('currentPlayer')
+                    result=0
+                    score.textContent=result
                 }
                 else{
                     // console.log("hi im player2")
-                    p2.textContent=(result-playRes1)
+                    p2.textContent=result
                     playRes2= Number(p2.textContent)
                     score.textContent = playRes2
                     alert(`GAME OVER! ${name} YOUR FINAL SCORE IS: ${playRes2}`)
-                    console.log(Number(p2.textContent))
+                    // console.log(Number(p2.textContent))
                     p2.classList.remove('currentPlayer')
                     p1.classList.add('currentPlayer')
                 }
                  currentTime = gameTimer
                  //    return result;
             }
+            console.log(playRes1)
+            console.log(playRes2)
+            if(playRes1 && playRes2)
+            {   
+                if(playRes1 < playRes2)
+                   {
+                    alert(`Player2 won the game!!! `)
+                   }
+                 else if(playRes2 < playRes1) {
+                    alert(`Player1 won the game!!! `)
+                 } 
+                 else {
+                    alert(`Both the players have equal scores!!!`)
+                   }
+            //  let maxScore = Math.max(playRes1, playRes2)
+            //     console.log(maxScore)
+            // alert(`${maxScore} is the winner!!`)
+                 
+            }
+           
      }
      let countDownTimerId = setInterval(countDown,1000)
-          
+        
    } 
       else{
           alert("Input name to play the game!!!!")
@@ -133,13 +155,15 @@ const startGame = play.addEventListener("click", ()=>{
 
 
         //    let player1
-        //     let player2
-        //      let playCompare=[player1,player2] 
-        //     playCompare.forEach(startGame => {
+        //    let player2
+        //    console.log(playRes1)
+        //    console.log(playRes2)
+        //    let playCompare=[player1,player2] 
+        //         playCompare.forEach(startGame => {
         //         console.log("loop")
         //         console.log(Math.max(playRes1, playRes2))
-        //     let maxScore = Math.max(playRes1, playRes2)
-        //     console.log(maxScore)
+        //     // let maxScore = Math.max(playRes1, playRes2)
+        //     // console.log(maxScore)
         //     // alert(`${maxScore} is the winner!!`)
         //     })
           
